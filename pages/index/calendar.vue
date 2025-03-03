@@ -94,7 +94,6 @@ const generateCalendar = () => {
       let dateString = currentDate.toISOString().split("T")[0];
       let activity = activities.value.find((a) => a.date === dateString);
       let month = currentDate.toLocaleString("default", { month: "short" });
-      console.log(month)
 
       if (month !== lastMonth) {
         // Store month label width based on previous entries

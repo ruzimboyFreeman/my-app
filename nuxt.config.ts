@@ -4,6 +4,20 @@ export default defineNuxtConfig({
   pages:true,
   devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss', 'shadcn-nuxt'],
+  nitro: {
+    devProxy: {
+      "/api": {
+        target: "http://localhost:8088", // ✅ Your Spring WebFlux backend
+        changeOrigin: true,
+        prependPath: false,
+      },
+    },
+  },
+  runtimeConfig: {
+    public: {
+      apiBase: "http://localhost:8088/api", // Use /api as the base URL for all API requests
+    },
+  },
   shadcn: {
     /**
      * Prefix for all the imported component
