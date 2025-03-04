@@ -16,12 +16,17 @@ const articleContent = ref('');
 </script>
 
 <template>
-  <NuxtLink to="/articles" class="text-primary hover:underline block mt-4">
+  <div class="max-w-5xl mx-auto">
+    <NuxtLink to="/articles" class="text-primary hover:underline block mt-4 -ml-40 fixed">
     <span class="font-bold">
       <ArrowLeftIcon /> Back to Articles
     </span>
-  </NuxtLink>
-  <p class="max-w-xl mx-auto ">{{ article.content }}</p>
+    </NuxtLink>
+    <div  class="text-center">
+      <h2 class="font-bold ">{{article.title}}</h2>
+      <p>{{article.content}}</p>
+    </div>
+  </div>
 
 </template>
 <style scoped>
