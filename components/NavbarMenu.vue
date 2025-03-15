@@ -13,6 +13,7 @@ const menuOptions = ref([
   { label: 'Articles', key: '/articles', icon: BookOpen, external: false },
   { label: 'Leetcode', key: '/leetcode', icon: Code ,external: false},
   { label: 'About', key: '/about', icon: User ,external: false},
+  { label: 'Report', key: '/report', icon: User ,external: false},
   { label: 'Channel', key: 'https://t.me/easy_programming_uz', icon: Send,external:true },
 ]);
 

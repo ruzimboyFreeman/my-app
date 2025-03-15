@@ -16,7 +16,7 @@
       </div>
 
       <div class="mb-4">
-        <label class="block text-sm font-medium mb-2">Category</label>
+        <label class="block  text-sm font-medium mb-2">Category</label>
         <select v-model="article.category" class="w-full border p-2 rounded">
           <option v-for="cat in categories" :key="cat.id" :value="cat.id">{{ cat.name }}</option>
         </select>

@@ -12,7 +12,7 @@ const openArticle = (slug) => {
 </script>
 
 <template>
-  <div class=" max-w-5xl mx-auto p-4 ">
+  <div >
     <h1 class="text-3xl font-bold mb-4">📚 Maqolalar</h1>
     <Accordion type="single" collapsible class="w-full">
       <AccordionItem v-for="topic in topics" :key="topic.id" :value="topic.id">

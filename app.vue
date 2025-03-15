@@ -28,8 +28,11 @@ onUnmounted(() => {
     </div>
 
     <!-- Main Content -->
-    <div class="mx-auto py-28">
+      <div v-if="!$route.path.endsWith('/admin')" class="max-w-7xl mx-auto p-4 py-28">
       <NuxtPage />
+    </div>
+    <div v-else class="max-w-7xl mx-auto">
+      <NuxtPage/>
     </div>
   </div>
 </template>
